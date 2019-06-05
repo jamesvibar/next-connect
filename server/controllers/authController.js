@@ -48,7 +48,7 @@ exports.signup = async (req, res) => {
     if (err) {
       return res.status(500).send(err.message)
     }
-    res.json(user)
+    res.json(user.name)
   })
 }
 
